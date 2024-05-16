@@ -1,0 +1,59 @@
+RewriteEngine On
+
+# ngăn không cho đọc .env
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+<IfModule mod_rewrite.c>
+# tạo đường dẫn base
+    RewriteBase /
+    
+    # đảm bảo được tải
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+    
+    # rule tại đây
+    
+    RewriteRule ^index.html index.php?type=web&controller=home&action=home [L]
+    
+    RewriteRule ^typing_text.html index.php?type=web&controller=home&action=typing_text [L]
+    
+    
+    
+    
+    
+    # Chặn truy cập vào các thư mục
+    RewriteCond %{REQUEST_URI} ^/views/
+    RewriteRule ^ - [F]
+    
+    RewriteCond %{REQUEST_URI} ^/controllers/
+    RewriteRule ^ - [F]
+    
+    RewriteCond %{REQUEST_URI} ^/models/
+    RewriteRule ^ - [F]
+    
+    RewriteCond %{REQUEST_URI} ^/helpers/
+    RewriteRule ^ - [F]
+    
+    RewriteCond %{REQUEST_URI} ^/config/
+    RewriteRule ^ - [F]
+    
+    RewriteCond %{REQUEST_URI} ^/routers/
+    RewriteRule ^ - [F]
+    
+    # Cho phép truy cập vào thư mục public
+    RewriteCond %{REQUEST_URI} ^/public/
+    
+    
+    # Nếu không tồn tại tệp, chuyển hướng đến trang 404.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^public /404.php [L]
+    
+    
+    # Xử lý trường hợp 404 (Không tìm thấy)
+    ErrorDocument 404 /404.php
+</IfModule>
