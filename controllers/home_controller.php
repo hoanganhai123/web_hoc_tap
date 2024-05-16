@@ -21,4 +21,8 @@ class Home_controller extends Base_controller
   public function typing_text(){
     return $this->view("typing_text");
   }
+  
+  public function mp3_player(){
+    return $this->view("mp3_player");
+  }
 }

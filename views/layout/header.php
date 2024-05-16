@@ -161,7 +161,7 @@ $(window).on('scroll', function()
 			<ul class="box_width_common list_portal common_space">
 
         <li style="position:relative;padding-top:12px;"><a target="zunia" href="http://localhost:8080/typing_text.html" class="trangchu txt_1_7em_normal txt_link"><i class="fas fa-angle-right"></i> Typing_text (chữ hoạt hình) <img src="https://tailieu.vn/static/b2013az/templates/version1/default/images/icons/new_icon.gif" style="float:left;position:absolute;right:22px;top:0px;"></a></li>
-        <li style="position:relative;padding-top:12px;"><a target="zunia" href="https://zunia.vn/holland.html?utm_source=TaiLieuVN&utm_medium=text&utm_campaign=menumb" class="trangchu txt_1_7em_normal txt_link"><i class="fas fa-angle-right"></i> Trắc Nghiệm Holland <img src="https://tailieu.vn/static/b2013az/templates/version1/default/images/icons/new_icon.gif" style="float:left;position:absolute;right:0px;top:0px;"></a></li>
+        <li style="position:relative;padding-top:12px;"><a target="zunia" href="http://localhost:8080/mp3_player.html" class="trangchu txt_1_7em_normal txt_link"><i class="fas fa-angle-right"></i> trình phát mp3 <img src="https://tailieu.vn/static/b2013az/templates/version1/default/images/icons/new_icon.gif" style="float:left;position:absolute;right:0px;top:0px;"></a></li>
         
 				<li><a href="https://m.tailieu.vn/kinh-doanh-marketing/tat-ca-tai-lieu-kinh-doanh-marketing.2.0.html" class="trangchu txt_1_7em_normal txt_link"><i class="fas fa-angle-right"></i> Kinh Doanh <span style="font-size:12px;color:#ccc;">(53286)</span></a></li>
 			</ul>

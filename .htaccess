@@ -22,6 +22,8 @@ RewriteEngine On
     
     RewriteRule ^typing_text.html index.php?type=web&controller=home&action=typing_text [L]
     
+    RewriteRule ^mp3_player.html index.php?type=web&controller=home&action=mp3_player [L]
+    
     
     
     
